@@ -1,32 +1,35 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <!-- <header> -->
+    <!-- {{ stateSync }} -->
+    <!-- <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> -->
+    <!-- </header> -->
+    <router-view />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+export default {
+  name: "App",
+  // Save data on reload
+  // computed: {
 
-nav {
-  padding: 30px;
+  //   stateSync() {
+     
+  //     localStorage.setItem("local", JSON.stringify(stt));
+  //     return "";
+  //   },
+  // },
+  created() {
+    console.log(this);
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+    // if (savedstate != null) {
+    //   this.$pinia.replaceState(JSON.parse(savedstate));
+    // }
+  },
+};
+</script>
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+<style >
 </style>
