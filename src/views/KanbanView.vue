@@ -27,7 +27,7 @@
           >
             <div
               :style="`background:${column.background}`"
-              class="kcard-head text-center relativeclass"
+              class="kcard-head text-center "
             >
               {{ column.name }}
 
@@ -404,6 +404,7 @@ input[type="file"] {
   font-size: 16px;
   border-radius: 5px;
   padding: 5px;
+  position:relative;
 }
 .kanbancards {
   background: #ffffff;
